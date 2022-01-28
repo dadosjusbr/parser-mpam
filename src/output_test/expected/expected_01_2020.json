@@ -1,0 +1,152 @@
+{
+    "contraCheque": [
+        {
+            "idContraCheque": "mpam/01/2020/1",
+            "chaveColeta": "mpam/01/2020",
+            "nome": "ADELTON ALBUQUERQUE MATOS",
+            "matricula": "000027-2-A",
+            "funcao": "PROCURADOR DE JUSTICA",
+            "localTrabalho": "17. PROCURADORIA DE JUSTICA",
+            "ativo": true,
+            "remuneracoes": {
+                "remuneracao": [
+                    {
+                        "categoria": "contracheque",
+                        "item": "Remuneração do Cargo Efetivo",
+                        "valor": 35462.22
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Outras Verbas Remuneratórias, Legais ou Judiciais",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Função de Confiança ou Cargo em Comissão",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Gratificação Natalina",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Férias (1/3 constitucional)",
+                        "valor": 13097.77,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Abono de Permanência",
+                        "valor": 8676.12,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "contracheque",
+                        "item": "Outras Remunerações Temporárias",
+                        "valor": 7880.49,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "natureza": "D",
+                        "categoria": "contracheque",
+                        "item": "Contribuição Previdenciária",
+                        "valor": -3900.84
+                    },
+                    {
+                        "natureza": "D",
+                        "categoria": "contracheque",
+                        "item": "Imposto de Renda",
+                        "valor": -14799.25
+                    },
+                    {
+                        "natureza": "D",
+                        "categoria": "contracheque",
+                        "item": "Retenção por Teto Constitucional",
+                        "valor": -4049.39
+                    },
+                    {
+                        "natureza": "D",
+                        "categoria": "contracheque",
+                        "item": "Descontos Diversos",
+                        "valor": -2899.69
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Auxílio Alimentação",
+                        "valor": 1700.0,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Indenização de Transporte",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Auxílio Moradia",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Ajuda de Custo",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Auxílio Saúde",
+                        "valor": 1446.25,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Férias Indenizadas",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Licença Prêmio Indenizada",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Outras Indenizações",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Insalubridade/Periculosidade",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Serviços Extraordinários",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Substituição de Função",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Exercício Acumulativo",
+                        "valor": 7880.49,
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Convocações",
+                        "tipoReceita": "O"
+                    },
+                    {
+                        "categoria": "indenizações",
+                        "item": "Outras Remunerações Temporárias",
+                        "tipoReceita": "O"
+                    }
+                ]
+            }
+        }
+    ]
+}
