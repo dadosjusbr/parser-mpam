@@ -44,6 +44,8 @@ def parse_execution(data, file_names):
     coleta.ano = int(year)
     coleta.repositorio_coletor = "https://github.com/dadosjusbr/coletor-mpam"
     coleta.versao_coletor = crawler_version
+    coleta.repositorio_parser = "https://github.com/dadosjusbr/parser-mpam"
+    coleta.versao_parser = "unspecified"
     coleta.arquivos.extend(file_names)
     timestamp = Timestamp()
     timestamp.GetCurrentTime()
