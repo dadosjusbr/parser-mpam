@@ -43,12 +43,6 @@
                         "tipoReceita": "O"
                     },
                     {
-                        "categoria": "contracheque",
-                        "item": "Outras Remunerações Temporárias",
-                        "valor": 7880.49,
-                        "tipoReceita": "O"
-                    },
-                    {
                         "natureza": "D",
                         "categoria": "contracheque",
                         "item": "Contribuição Previdenciária",

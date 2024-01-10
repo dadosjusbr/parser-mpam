@@ -15,7 +15,6 @@ HEADERS = {
         "Gratificação Natalina": 8,
         "Férias (1/3 constitucional)": 9,
         "Abono de Permanência": 10,
-        "Outras Remunerações Temporárias": 11,
         "Contribuição Previdenciária": 14,
         "Imposto de Renda": 15,
         "Retenção por Teto Constitucional": 16,
