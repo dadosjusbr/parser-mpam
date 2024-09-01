@@ -89,7 +89,7 @@ def cria_remuneracao(row, categoria):
             if value == 5:
                 remuneracao.tipo_receita = Coleta.Remuneracao.TipoReceita.Value("B")
             elif value in [14, 15, 16, 17]:
-                remuneracao.valor = abs(remuneracao.valor) * (-1)
+                remuneracao.valor = remuneracao.valor * (-1)
                 remuneracao.natureza = Coleta.Remuneracao.Natureza.Value("D")
             elif value in [6, 7, 8, 9, 10, 11]:
                 remuneracao.tipo_receita = Coleta.Remuneracao.TipoReceita.Value("O")
