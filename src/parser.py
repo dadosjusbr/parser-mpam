@@ -43,7 +43,7 @@ HEADERS = {
 def parse_employees(fn, chave_coleta):
     employees = {}
     counter = 1
-    forbidden_words = ["Ministério", "Remuneração", "Fonte", "ANO", "GRUPO", "NOME"]
+    forbidden_words = ["Ministério", "Remuneração", "Fonte", "GRUPO", "NOME"]
     for row in fn:
         matricula = row[1]
         for word in forbidden_words:
