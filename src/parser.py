@@ -3,6 +3,7 @@ from cmath import nan
 import sys
 import os
 from coleta import coleta_pb2 as Coleta
+import pandas as pd
 
 CONTRACHEQUE = "contracheque"
 INDENIZACOES = "indenizações"
@@ -52,7 +53,12 @@ def parse_employees(fn, chave_coleta):
             else:
                 name = row[2]
         funcao = row[3]
-        local_trabalho = row[4]
+
+        if pd.isna(row[4]):
+            local_trabalho = ""
+        else:
+            local_trabalho = row[4]
+
         if not is_nan(name):
             membro = Coleta.ContraCheque()
             membro.id_contra_cheque = chave_coleta + "/" + str(counter)
@@ -83,7 +89,7 @@ def cria_remuneracao(row, categoria):
             if value == 5:
                 remuneracao.tipo_receita = Coleta.Remuneracao.TipoReceita.Value("B")
             elif value in [14, 15, 16, 17]:
-                remuneracao.valor = remuneracao.valor * (-1)
+                remuneracao.valor = abs(remuneracao.valor) * (-1)
                 remuneracao.natureza = Coleta.Remuneracao.Natureza.Value("D")
             elif value in [6, 7, 8, 9, 10, 11]:
                 remuneracao.tipo_receita = Coleta.Remuneracao.TipoReceita.Value("O")
