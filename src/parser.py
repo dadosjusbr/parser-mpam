@@ -3,6 +3,7 @@ from cmath import nan
 import sys
 import os
 from coleta import coleta_pb2 as Coleta
+import pandas as pd
 
 CONTRACHEQUE = "contracheque"
 INDENIZACOES = "indenizações"
@@ -42,7 +43,7 @@ HEADERS = {
 def parse_employees(fn, chave_coleta):
     employees = {}
     counter = 1
-    forbidden_words = ["Ministério", "Remuneração", "Fonte", "ANO", "GRUPO", "NOME"]
+    forbidden_words = ["Ministério", "Remuneração", "Fonte", "GRUPO", "NOME"]
     for row in fn:
         matricula = row[1]
         for word in forbidden_words:
@@ -52,7 +53,12 @@ def parse_employees(fn, chave_coleta):
             else:
                 name = row[2]
         funcao = row[3]
-        local_trabalho = row[4]
+
+        if pd.isna(row[4]):
+            local_trabalho = ""
+        else:
+            local_trabalho = row[4]
+
         if not is_nan(name):
             membro = Coleta.ContraCheque()
             membro.id_contra_cheque = chave_coleta + "/" + str(counter)
